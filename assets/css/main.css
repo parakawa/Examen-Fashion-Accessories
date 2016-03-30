@@ -124,4 +124,26 @@ ul {
   padding-left: 22px;
   width: 40%; }
 
+/****CONTACT*****/
+#banner-contact {
+  background-image: url("../images/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 14% 5% 5% 5%; }
+
+.form input {
+  background: #EEEEEE;
+  border: none;
+  width: 100%;
+  height: 35px;
+  padding-left: 21px;
+  margin-top: 5px; }
+.form textarea {
+  width: 100%;
+  background: #EEEEEE;
+  border: none;
+  padding: 14px 21px;
+  margin-top: 5px; }
+
 /*# sourceMappingURL=main.css.map */

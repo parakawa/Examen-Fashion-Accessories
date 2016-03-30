@@ -1,0 +1,95 @@
+mixin stars(num)
+  case num
+    when '0'
+    .rating
+				ul
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+    when '1'
+   	.rating
+				ul
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+      
+    when '2'
+   	.rating
+				ul
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+
+	 when '3'
+   	.rating
+				ul
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+
+
+mixin img-100(img,ext)
+	img.w-100(src="assets/images/"+img+"."+ext,alt="")
+
+mixin product(img, nombre,precio)
+	.product
+		img.w-100(src=""+img,alt="")
+		.description
+			h5 nombre
+			.rating
+				ul
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+			h4.red precio
+
+mixin clients(img,ext)
+	.col-sm-2
+		.client
+			+img-100(img,ext)
+
+
+mixin products2(img,ext,product,costo)
+	.col-sm-4
+		.catalogo
+			.products2
+				+img-100(img,ext)
+			.description2
+				h5 product
+				h4.red costo
+				+stars-fijas()

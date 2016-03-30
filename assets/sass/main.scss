@@ -165,3 +165,30 @@ ul {
     width: 40%;
 		}	
 }
+
+
+/****CONTACT*****/
+
+#banner-contact{
+@include bg('../images/contact.jpg');
+  padding: 14% 5% 5% 5%;
+}
+
+.form{
+	input{
+	background: $bg-gray;
+	border:none;
+  	width:100%;
+  	height: 35px;
+    padding-left: 21px;
+    margin-top:5px;
+	}
+
+	textarea {
+    width: 100%;
+    background: $bg-gray;
+    border: none;
+    padding: 14px 21px;
+    margin-top:5px;
+	}
+}
