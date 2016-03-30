@@ -1,0 +1,88 @@
+section#banner.text-center
+	span.white AUTUMN/WINTER LOOKBOOK
+	h3.white 2016 COLLECTION
+section#accessories.mt-3
+	.container
+		.row
+			.col-sm-5
+				img.w-100(src="assets/images/banner1.jpg", alt="accesories")
+			.col-sm-7
+				img.w-100(src="assets/images/banner2.jpg", alt="")
+.slider.text-center.tb-1
+	ul
+		li
+			i.fa.fa-angle-left
+		li 
+			a(src="#",alt="")
+				h4 LATEST
+		li 
+			a(src="#",alt="")
+				h4 BESTSELLER
+		li 
+			a(src="#",alt="")
+				h4 SALE
+		li 
+			i.fa.fa-angle-right
+section#muestrario.text-center
+	.container
+		.col-sm-3
+			+product('assets/images/h1.jpg','Nombre','$218')
+		.col-sm-3
+			+product('assets/images/i1.jpg','Nombre','$218')
+		.col-sm-3
+			+product('assets/images/j1.jpg','Nombre','$218')
+		.col-sm-3
+			+product('assets/images/k1.jpg','Nombre','$218')
+			
+
+section#clientes.text-center.mt-3
+	.container
+		.row
+			+clients('client1','jpg')
+			+clients('client2','jpg')
+			+clients('client3','jpg')
+			+clients('client4','jpg')
+			+clients('client5','jpg')
+			+clients('client6','jpg')
+.slider.text-center.tb-1
+	ul
+		li
+			i.fa.fa-angle-left
+		li 
+			a(src="#",alt="")
+				h4 CLOTHING
+		li 
+			a(src="#",alt="")
+				h4 EQUIPMENTS
+		li 
+			a(src="#",alt="")
+				h4 JEWELLERY
+		li 
+			i.fa.fa-angle-right
+section#muestrario2.mt-3
+	.container
+		.row
+			+products2('a1','jpg','no funciona','no funciona')
+			+products2('b1','jpg','no funciona','no funciona')
+			+products2('c1','jpg','no funciona','no funciona')
+
+		.row.mt-3
+			+products2('d1','jpg','no funciona','no funciona')
+			+products2('e1','jpg','no funciona','no funciona')
+			+products2('f1','jpg','no funciona','no funciona')
+.slider.text-center.tb-1
+	ul
+		li
+			i.fa.fa-angle-left
+		li 
+			a(src="#",alt="")
+				h4 BLOG
+		li 
+			i.fa.fa-angle-right
+section#blog.mt-3
+	.container
+		.row
+			+blog('blog1','jpg')
+			+blog('blog2','jpg')
+			+blog('blog3','jpg')
+			+blog('blog1','jpg')

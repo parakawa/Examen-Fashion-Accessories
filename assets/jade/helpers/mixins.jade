@@ -1,0 +1,59 @@
+mixin stars-fijas()
+	.rating
+				ul
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+
+mixin img-100(img,ext)
+	img.w-100(src="assets/images/"+img+"."+ext,alt="")
+
+mixin product(img, nombre,precio)
+	.product
+		img.w-100(src=""+img,alt="")
+		.description
+			h5 nombre
+			.rating
+				ul
+					li
+						i.fa.fa-star
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+					li
+						i.fa.fa-star-o
+			h4.red precio
+
+mixin clients(img,ext)
+	.col-sm-2
+		.client
+			+img-100(img,ext)
+
+
+mixin products2(img,ext,product,precio)
+	.col-sm-4
+		.catalogo
+			.products2
+				+img-100(img,ext)
+			.description2
+				h5 Deliver Wide
+				h4.red $218
+				+stars-fijas()
+mixin blog(img,ext)
+	.col-sm-3
+		+img-100(img,ext)
+		h5 THE SAMPLE HEADING TITLE
+		small 27/11/2015
+		p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, officia!
+		a 
+			small Read more...

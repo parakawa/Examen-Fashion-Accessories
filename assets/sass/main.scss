@@ -1,0 +1,167 @@
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
+
+/***Generales****/
+
+body{
+   font-weight: 400;
+   line-height: 20px;
+   font-family: $font-body;
+   color: $color-body;
+   padding:0;
+   margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $titles;
+	color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/****Utilities****/
+
+.bg-gray{
+	background-color: $bg-gray;
+}
+
+.white{
+	color: white;
+}
+
+.red{
+	color: #EA7E7E;
+}
+
+.mt-3{
+	margin-top:3%;
+}
+
+.tb-1{
+	margin-top:1%;
+}
+
+.w-100{
+	width:100%;
+}
+
+.w-50{
+	width:50%;
+}
+
+.f-left{
+	float:left;
+}
+
+.f-right{
+	float:right;
+}
+/****Sections****/
+
+.top{
+	padding: 15px 50px 21px;
+	.welcome{
+		float: left;
+	}
+	.top-menu  {
+		ul {
+	  float: right;
+	  		li{
+				display: inline-block;
+				padding: 0 1%;
+	  			}
+			}
+	}
+}
+
+#header-medio{
+	padding: 40px 0;
+	position:relative;
+	.opening-time {
+  padding: 25px 0 0 15px;
+	.clock {
+	  float: left;
+	  font-size: 42px;}
+
+		.time{
+			float: right;
+			font-size: 20px;
+			}
+		}
+
+	.input-group .form-control {
+	  float: right;
+	  width: 75%;
+		}
+	}	
+
+.menu{
+  background: #F1F1F1;
+}
+
+.main-menu nav ul li {
+  float: left;
+  position: relative;
+	  a {
+	  display: block;
+	  font-family: "Raleway",sans-serif;
+	  padding: 18px 30px;
+	  position: relative;
+	  text-decoration: none;
+	}
+}
+
+#banner {
+  @include bg('../images/slider1.jpg');
+  padding: 14% 5% 5% 5%;
+  	span{
+  		border: 3px white solid;											
+		padding: 10px 29px;
+		font-size: 34px;
+  	}
+	h3{
+		font-size: 19px;
+		letter-spacing: 8px;
+		margin-top: 34px;
+
+	}
+}
+
+
+.slider ul li{
+	display:inline-block;
+	margin:10px 15px;
+}
+
+.rating ul li{
+	display:inline-block;
+}
+
+#clientes{
+	background-image: url('../images/client-bg.jpg');
+	background-size: cover;
+    padding: 3% 2%;
+    .client{
+    	padding:1%;
+    }
+}
+
+#muestrario2{
+	.products2{	    
+    float: left;
+    position: relative;
+    width: 60%;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #F1F1F1;
+			}
+	.description2{
+	float: right;
+    padding-left: 22px;
+    width: 40%;
+		}	
+}
